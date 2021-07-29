@@ -10,8 +10,8 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -58,18 +58,9 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.cholomia.basicpaginationlib'
-                artifactId = 'final'
-                version = '1.0'
-            }
-            // Creates a Maven publication called “debug”.
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = 'com.cholomia.basicpaginationlib'
-                artifactId = 'final-debug'
-                version = '1.0'
+                groupId = 'com.github.cholomia'
+                artifactId = 'BasicPaginationLib'
+                version = '1.0.1'
             }
         }
     }
